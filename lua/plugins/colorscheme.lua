@@ -1,11 +1,19 @@
 return {
-  { "sainnhe/sonokai"},
-
-  -- Configure LazyVim to load gruvbox
+  {
+    "navarasu/onedark.nvim",
+    priority = 1000, -- make sure to load this before all the other start plugins
+    config = function()
+      require("onedark").setup({
+        style = "warmer",
+      })
+      -- Enable theme
+      require("onedark").load()
+    end,
+  },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "sonokai"
+      colorscheme = "onedark",
     },
-  }
+  },
 }
