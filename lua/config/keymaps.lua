@@ -7,6 +7,8 @@ unmap("i", "<A-j>")
 unmap("i", "<A-k>")
 unmap("v", "<A-j>")
 unmap("v", "<A-k>")
+unmap("n", "H")
+unmap("n", "L")
 
 map("n", ";", ":", { silent = true })
 map("n", "s", "<cmd> HopWord <cr>", { silent = true })
